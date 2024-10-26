@@ -1,0 +1,399 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    padding-top: 7em; 
+    scroll-behavior: smooth;
+
+}
+
+body{
+	background: #F0F8FF;
+    margin: 5px;
+}
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    padding: 20px;
+    background: #fff;
+	box-shadow: 0 0 10px 0 rgb(0,0,0,0.2);
+
+}
+
+.navbar p{ 
+	font-size: 25px;
+	font-weight: bold;
+	color: #007BFF;
+    font-family: Verdana;
+}
+
+.navbar span{
+	font-size: 25px;
+	font-weight: bold;
+	color: #000;
+    font-family: Verdana;
+}
+
+.liste{
+	display: flex;
+    align-items: center;
+}
+
+.liste li{
+	margin: 0 30px;
+	list-style: none;
+
+}
+
+.liste li a{
+    font-size: 18px;
+    font-weight: 300;
+    transition: 0.2s;
+	text-decoration: none;
+	color: #000;
+}
+
+.liste li a:hover{
+    padding: 2px 0;
+    color: #007BFF;
+}
+
+.bouton{
+    width: 100px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #007BFF;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 4px;
+    padding: 8px 14px;
+    transition: 0.2s;
+    font-weight: bold;
+
+}
+
+#image-accueil{
+	margin: 0 auto;
+    margin-top: 100px;
+    padding: 4px 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#image-accueil .welcome h2{
+    font-size: 25px;
+    margin-bottom: 10px
+}
+
+#image-accueil .welcome h2 span{
+    color: #007BFF;
+}
+
+#image-accueil .welcome p{
+    margin-bottom: 10px;
+    color: #535353;
+    font-size: 17px;
+}
+
+#image-accueil img{
+	width: 100%;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+    margin-bottom: 20px;
+}
+
+
+::-webkit-scrollbar{
+	background: transparent;
+	width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+	background: #007BFF;
+	border-radius: 4px;
+}
+
+#produits {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titre{
+    margin-top: 120px;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #000;
+
+}
+
+.texte{
+    margin: 50px 6%;
+    color: #535353;
+    font-size: 17px;
+    text-align: center;
+    display: flex;
+}
+
+.voitures {
+    margin: 80px auto;
+    padding: 0 10%;
+    max-width: 100%;
+}
+
+.voitures ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 100px;
+}
+
+.voitures li{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    margin-bottom: 70px;
+    transition: 0.5s;
+    height: 200px;
+    width: 15%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.taille{
+    height: 100%;
+    width: 100%;
+}
+.voitures li div{
+    width: 100%;
+    height: 90%;
+    margin-bottom: 5px;
+
+}
+
+.taille img{
+    height: 100%;
+    width: 100%;
+}
+
+.voitures li:hover{
+    margin: 10px;
+    background: #fff;
+}
+
+.nom{
+    color: #000;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.prix{
+    color: #ea1f33;
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+#choix a{
+    text-align: center;
+    background: #007BFF;
+    /*background: #ea1f33;*/
+    width: 90%;
+    color: #fff;
+    padding: 5%;
+    text-decoration: none;
+    font-size: 15px;
+
+}
+
+#theme{
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    font-size: 30px;
+    text-transform: uppercase;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+#connect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #007BFF;
+    border-radius: 20px;
+    width: 30%;
+    margin: 10px auto;
+    padding: 20px;
+    border: 1 solid #ccc;
+    display: flex;
+    flex-direction: column;
+}
+
+#connect form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1 solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    padding-top: 40px;
+}
+
+#garder input,textarea,button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1 solid #ccc;
+    border-radius: 4px;
+    width: 90%;
+    margin-bottom: 15px;
+    padding: 6px;
+    font-size: 15px;
+    resize: none;
+}
+
+#garder button{
+    align-items: center;
+    border: 1 solid #ccc;
+    width: 94%;
+    margin-bottom: 2px;
+    background: #ccc;
+    color: #007BFF;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#garder button:hover{
+    background: #000;
+    color: #007BFF;
+}
+
+.invite{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    color: #535353;
+    font-size: 17px;
+    text-align: center;
+    display: flex;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background: #007BFF;
+    color: #000;
+    text-align: center;
+    margin-top: 8px;
+    padding: 8px 0;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive design */
+
+@media (max-width: 970px){
+    header{
+        padding: 2%;
+    }
+    .liste{
+        display: none;
+    }
+    #write{
+    padding: 2px 5px;
+    display: flex;
+    margin: 2px;
+    justify-content: center;
+    } 
+    .voitures ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    } 
+    .voitures li{
+        width: 50%;
+    }
+    #connect{
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 690px){
+    #write{
+        padding: 0 10px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .right{
+        margin-top: 30px;
+    }
+    .voitures ul{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 50%;
+        height: 40%;
+
+    }
+    .voitures li{
+        width: 100%;
+        height: 100%;
+        margin: 20px auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .voitures li:hover{
+    margin: 5px;
+    background: #fff;
+    }
+    #connect{
+        width: 50%;
+    }
+}
+
+@media screen(max-width: 440px){
+    header{
+        height:  
+    }
+    #imagely"
+    .voitures ul{
+        display: none;
+        width: 100%;
+    }
+    .voitures li{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    #produits{
+        display: none;
+    }
+    #connect{
+        width: 100%;
+    }
+}
